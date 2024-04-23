@@ -3,7 +3,7 @@
 }
 
 #mainContentContainer {
-    background-image: url("/assets/LakeTahoe.jpg");
+    background-image: url("assets/LakeTahoe.jpg");
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
