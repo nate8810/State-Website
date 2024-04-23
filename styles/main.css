@@ -1,0 +1,73 @@
+﻿.filter-primary {
+    filter: invert(18%) sepia(35%) saturate(7364%) hue-rotate(192deg) brightness(95%) contrast(101%);
+}
+
+/*C4.1: Element selector */
+body {   
+    /*C.1.1: Font-family declaration */
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/*C4.3:ID selector */
+#brand {
+    color: white;
+    -webkit-text-stroke: 2px #0033A0;
+}
+
+#header {
+    font-family: sans-serif;
+    background-color: #005A9C;
+    border-bottom: solid;
+    border-color: #FFA300;
+}
+
+.navbar {
+    background-color: #0033A0 !important;
+}
+
+#navbarNav {
+    direction: rtl;
+}
+
+.nav-link {
+    font-size: 1.25rem;
+}
+
+/*C.1.2: Hover effect form nav buttons */
+.nav-link:hover {
+    color: #FFA300 !important;
+}
+
+#main {
+    padding: 1rem 0;
+}
+
+footer {
+    /*C.3: Absolute position*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333F42;
+    height: 2rem;
+}
+
+    footer > div {
+        /*C.2: Float property*/
+        float: right;
+        color: white;
+    }
+
+
+@media (max-width: 991px) {
+    #brand {
+        -webkit-text-stroke: 1px #0033A0;
+    }
+
+    footer > div {
+        position: unset;
+    }
+}

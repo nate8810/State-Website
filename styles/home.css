@@ -1,0 +1,76 @@
+﻿body {
+    color: white;
+}
+
+#mainContentContainer {
+    background-image: url("/assets/LakeTahoe.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50rem;
+}
+
+#mainContent {
+    background-color: rgba(0, 0, 0, .35);
+}
+
+/*C.3: Relative positioning*/
+#innerMain {
+    position: relative;
+    left: 8%;
+    top: 18%;
+}
+
+#mainContentText {
+    margin-top: 1.5rem;
+    width: 85%;
+    font-size: large;
+}
+
+.carousel-item {
+    max-height: 31rem;
+}
+
+.carousel-caption {
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .35);
+}
+
+#sitesAsideContent {
+    color: black !important;
+    font-size: x-large;
+}
+
+    #sitesAsideContent > ol > li {
+        margin-bottom: 1rem;
+    }
+
+        #sitesAsideContent > ol > li > a {
+            color: #005A9C !important;
+            text-decoration: none;
+        }
+
+            #sitesAsideContent > ol > li > a:hover {
+                color: black !important;
+            }
+
+#visitVegas {
+    filter: brightness(0) saturate(100%)
+}
+
+/*C4.2: Class selector used 2+ times*/
+.listlogo {
+    max-width: 6rem;
+    margin-right: 1rem;
+}
+
+footer {
+    position: unset;
+}
+
+@media (min-width: 992px) {
+    #sitesAside {
+        padding-top: 1rem;
+    }
+}

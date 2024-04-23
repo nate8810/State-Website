@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!--A.1.1: title-->
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="styles/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />
+    <link href="styles/home.css" rel="stylesheet" />
+</head>
+<body>
+    <!--A.2.1: Header element-->
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <a href="index.html">
+                        <h1 id="brand" class="display-3">NEVADA</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--A.2.2: Nav element-->
+    <nav class="navbar navbar-expand-lg navbar-dark text-bg-dark ">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--A.1.3: Menu for navigating to other pages-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!--B.3: Unordered list-->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="references.html">References</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lasvegas.html">Las Vegas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Reno.html">Reno</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="CarsonCity.html">Carson City</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid" id="main">
+        <div class="row">
+            <!--A.2.3: Section element-->
+            <section class="col-lg-8">
+                <div id="mainContentContainer" class="row">
+                    <div class="col-md-8" id="mainContent">
+                        <div id="innerMain">
+                            <div>
+                                <h1>Visit Nevada</h1>
+                            </div>
+                            <div id="mainContentText">
+                                <p>
+                                    Nevada is seemingly endless boasting vase wide open spaces. There are so amny things to do in the state, the possibiliteis are endless!
+                                </p>
+                                <p>
+                                    Collect stories while you follow your curiosity and wander around the Silver State. No matter what you're into, we have plenty of things to do for everyone!'
+                                </p>
+                                <p>
+                                    The three main cities listed on this website are Carson City (the capital), Reno (The biggest little city in the world), and Las Vegas (Sin City). However, there is so much more to explore!
+                                </p>
+                                <p>
+                                    With national parks, museums, fairs, festivals, big cities, and ghost towns, we have it all. Come explore the great Silver State! <sup>1</sup>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="col-lg-4">
+                <div class="row">
+                    <!--A.2.3: Aside element-->
+                    <aside class="col">
+                        <!--A.1.2: Relevant image(s)-->
+                        <div id="mainCarousel" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Las Vegas"></button>
+                                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Reno"></button>
+                                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Carson City"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/assets/VegasSign2.png" class="d-block w-100" alt="Welcome to Las Vegas sign">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Sin City</h5>
+                                        <p>"The entertainment capital of the world." Come find out why!</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/RenoSign2.jpg" class="d-block w-100" alt="Reno Sign">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>The Biggest Little City</h5>
+                                        <p>Reno is commonly referred to as "The biggest little city." Come find out why!</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/CarsonCitySign2.jpg" class="d-block w-100" alt="Carson City Sign">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>The State Capital</h5>
+                                        <p>Carson City is the capital of Nevada, but also has plenty of fun recreational activities!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </aside>
+                </div>
+                <div class="row">
+                    <aside class="col" id="sitesAside">
+                        <div class="container" id="sitesAsideContent">
+                            <h3>Check out the website for each city!</h3>
+                            <!--B.2: Ordered list-->
+                            <ol>
+                                <li>
+                                    <!--B.1: Link to external website(s)-->
+                                    <a href="https://visitcarsoncity.com/" target="_blank">
+                                        <img class="listlogo" id="visitCarson" src="assets/visit_carson_city.svg" alt="Vist Carson City Logo" />
+                                        <span>VisitCarsonCity.com</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.visitrenotahoe.com/" target="_blank">
+                                        <img class="listlogo" id="visitReno" src="assets/renotahoe.jpg" alt="Visit RenoTahoe Logo" />
+                                        <span>VisitRenoTahoe.com</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.visitlasvegas.com/" target="_blank">
+                                        <img class="listlogo" id="visitVegas" src="assets/visit_vegas_logo_white.svg" alt="Vist Las Vegas Logo" />
+                                        <span>VisitVegas.com</span>
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <small>Front End Web Development - D277. Nathaniel Castillo</small>
+        </div>
+    </footer>
+
+    <script src="scripts/bootstrap/bootstrap.bundle.js"></script>
+</body>
+</html>

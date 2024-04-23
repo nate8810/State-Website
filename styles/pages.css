@@ -1,0 +1,20 @@
+﻿body {
+    color: black;
+}
+
+
+#pageTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.relevantImage {
+    max-width: 22rem;
+}
+
+.socials {
+    max-width: 15rem;
+}
+

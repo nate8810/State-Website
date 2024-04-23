@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!--A.1.1: title-->
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="styles/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />
+    <link href="styles/pages.css" rel="stylesheet" />
+</head>
+<body>
+    <!--A.2.1: Header element-->
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <a href="index.html">
+                        <h1 id="brand" class="display-3">NEVADA</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--A.2.2: Nav element-->
+    <nav class="navbar navbar-expand-lg navbar-dark text-bg-dark ">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--A.1.3: Menu for navigating to other pages-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!--B.3: Unordered list-->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="references.html">References</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lasvegas.html">Las Vegas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Reno.html">Reno</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="CarsonCity.html">Carson City</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid" id="main">
+        <div class="row">
+            <!--A.2.3: Section element-->
+            <section class="col-md-8">
+                <div class="container">
+                    <div class="alert alert-success alert-dismissible" id="submitSuccess" role="alert" style="display:none">
+                        <strong>Sucess!</strong><span> Form submitted successfully!</span>
+                    </div>
+                    <h2>Contact</h2>
+                    <!--D: Add form-->
+                    <form class="needs-validation" id="contactForm" onscroll="confirmEmail(e)">
+                        <div class="row mb-3">
+                            <div class="col">
+                                <lable for="firstName" class="form-label">First Name</lable>
+                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="John" />
+                            </div>
+                            <div class="col">
+                                <lable for="lastname" class="form-label">Last Name</lable>
+                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Smith" />
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="johnsmith@domain.com" required />
+                            </div>
+                            <div class="col">
+                                <label for="emailConfirm" class="form-label">Confirm Email</label>
+                                <div class="input-group has-validation">
+                                    <input type="email" class="form-control" id="emailConfirm" name="emailConfirm" placeholder="johnsmith@domain.com" required />
+                                    <div class="invalid-feedback">Email address does not match</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <textarea class="form-control" id="question" name="question" placeholder="Ask your questions here."></textarea>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <button class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <!--A.2.3: Aside element-->
+            <aside class="col-md-4">
+                <div class="container text-center">
+                    <h2>Socials</h2>
+                    <a href="https://www.linkedin.com/in/nate-castillo-developer/" target="_blank">
+                        <img class="socials" src="assets/linkedin.png" alt="linkedin Logo" />
+                    </a>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <small>Front End Web Development - D277. Nathaniel Castillo</small>
+        </div>
+    </footer>
+
+    <script src="scripts/bootstrap/bootstrap.bundle.js"></script>
+    <script src="scripts/contact.js"></script>
+</body>
+</html>
